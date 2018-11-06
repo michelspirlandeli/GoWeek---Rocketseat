@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const TweetSchema = new mongoose.Schema({
     author : String,
-    content: Strin,
+    content: String,
     likes  : {
         type   : Number,
         default: 0,
@@ -13,4 +13,4 @@ const TweetSchema = new mongoose.Schema({
     },
 });
 
-module.exports = 
+module.exports = mongoose.model("Tweet", TweetSchema);
